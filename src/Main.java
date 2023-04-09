@@ -43,20 +43,12 @@ public class Main {
         zooPark.addAnimalInZoo(lion3);
         System.out.println("кол-во Животных в зоопарке :" + zooPark.getInfoZoo(zooPark.zooParks));
         System.out.println("вся информация о животных в зоопарке : ");
-        for (Animal s : zooPark.zooParks) {
-            if (s != null) {
-                System.out.println(s.toSpring());
-            }
-            System.out.println("----------------------------------");
-        }
+        System.out.println(zooPark.information());
+        System.out.println("----------------------------------");
         zooPark.delete(3);
-        for (Animal s : zooPark.zooParks) {
-            if (s != null) {
-                System.out.println(s.toSpring());
-            }
+        System.out.println(zooPark.information());
 
-
-        }
 
     }
-}
+
+    }
